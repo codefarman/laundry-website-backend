@@ -11,6 +11,10 @@ pnpm-lock.yaml
 .env.local
 .env.*.local
 
+seed-admin.js
+seed-branches.js
+seed-laundry-services.js
+
 # Logs
 logs
 *.log
