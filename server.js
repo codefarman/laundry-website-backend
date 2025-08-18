@@ -25,13 +25,20 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 const allowedOrigins = [
-  "http://localhost:5173", // for local development
-  "https://laundry-website-git-main-farmans-projects-f613dada.vercel.app", // deployed frontend (Vercel/Netlify etc.)
+  "http://localhost:5173", // local dev
+  "https://laundry-website-one.vercel.app", // production frontend
+  "https://laundry-website-git-main-farmans-projects-f613dada.vercel.app", // preview deploys
 ];
 
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
