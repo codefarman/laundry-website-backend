@@ -26,7 +26,7 @@ const port = process.env.PORT || 5000;
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173", // for local development
-  "https://your-frontend-domain.vercel.app", // deployed frontend (Vercel/Netlify etc.)
+  "https://laundry-website-git-main-farmans-projects-f613dada.vercel.app", // deployed frontend (Vercel/Netlify etc.)
 ];
 
 app.use(
