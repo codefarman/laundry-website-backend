@@ -9,7 +9,7 @@ const updateAdminPassword = async () => {
     await mongoose.connect(process.env.MONGO_URI);
     console.log('Connected to MongoDB');
 
-    const hashedPassword = await bcrypt.hash('adminPassword123', 10);
+    const hashedPassword = await bcrypt.hash('AdminPassword123', 10);
     const result = await mongoose.connection.db.collection('users').updateOne(
       { email: 'admin@example.com' },
       { $set: { password: hashedPassword, role: 'admin' } }

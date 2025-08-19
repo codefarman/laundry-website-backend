@@ -7,7 +7,7 @@ dotenv.config();
 const branches = [
   {
     name: 'Main Branch',
-    address: 'Mussafah Shabiya, ME - 11, M.B.Z Abu Dhabi',
+    address: 'Musaffah Shabiya, ME - 11, M.B.Z Abu Dhabi',
     contactNumbers: ['050 4224 956', '055 1452 443'],
     lat: 24.3267,
     lng: 54.5319,
@@ -21,7 +21,7 @@ const branches = [
   },
   {
     name: 'Branch 3',
-    address: '7th Building Banijas Court West, Abu Dhabi, U.A.E.',
+    address: '7th Building Baniyas Court West, Abu Dhabi, U.A.E.',
     contactNumbers: ['050 4224 956'],
     lat: 24.3,
     lng: 54.63,

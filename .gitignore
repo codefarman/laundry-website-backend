@@ -11,6 +11,7 @@ pnpm-lock.yaml
 .env.local
 .env.*.local
 
+pass.js
 seed-admin.js
 seed-branches.js
 seed-laundry-services.js
